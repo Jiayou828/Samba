@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from .encoders.single_vmamba import vssm_base as backbone
+from .encoders.single_vmamba import vssm_small as backbone
 from .decoders.MambaDecoder import MambaDecoder
 
 class Model(nn.Module):

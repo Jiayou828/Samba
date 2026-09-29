@@ -59,7 +59,7 @@ for i, data_batch in enumerate(test_loader):
     dataset = data_batch['dataset']
 
     if config.cuda:
-        image = image.cuda(),
+        image = image.cuda()
     with torch.no_grad():
 
         out, saliency = model(image)
